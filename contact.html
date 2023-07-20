@@ -1,0 +1,154 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="utf-8"/>
+    <meta https-equiv="X-UA-compatible" content="IE-edge"/>
+    <!--tell the browser to be responsive to screen width-->
+    <meta http-equiv="X-UA-compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="keywords" content=""/>
+    <meta name="discription" content=""/>
+    <link rel="stylesheet" href="style.css">
+        <style type="text/css">
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 10%;
+                margin-top: 3%;
+                background: rgb(237, 219, 221);
+            }
+            .tdt{
+                width: 10%;
+                }     
+            .nav{
+                margin-left: 70%;
+            }
+            a{
+                font-weight: bold;
+                text-decoration: none;
+                font-size: 20px;
+                margin-right: 25px;
+            }
+            input{
+                width: 97%;
+                height: 40px;
+                border: 3px solid blueviolet;
+                margin-bottom: 15px;
+                border-radius: 8px;
+                padding-left: 10px;
+                background: burlywood;
+            }
+            textarea{
+                width: 100%;
+                border: 3px solid blueviolet;
+                border-radius: 5px;
+                background: burlywood;
+            }
+            button{
+                height: 35px;
+                background-color: blueviolet;
+                color: #fff;
+                border-radius: 5px;
+                font-size: 18px;
+                font-weight: bold;
+                border: 0;
+                width: 100px;
+            }
+            @media only screen and (max-width:600px){
+                body{
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 8%;
+                background: pink;
+            }    
+            .nav{
+                margin-left: 240px;
+                display: flex;
+                margin-bottom: 15px;
+            }
+            a{
+                font-weight: bold;
+                text-decoration: none;
+                font-size: 14px;
+            }
+            h1{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+            input{
+                width: 200px;
+                height: 30px;
+                border: 3px solid blueviolet;
+                margin-bottom: 15px;
+                border-radius: 8px;
+            }
+            .cform{
+                text-align: center;
+                align-items: center;
+                align-content: center;
+            }
+            textarea{
+                width: 100%;
+            }
+            button{
+                height: 35px;
+                font-weight: bold;
+                width: 100px;
+            }
+            }
+        </style>
+    
+    <title>contact page</title>
+    <link rel="icon" type="image/x-icon" href="images/1672419551416.jpg">
+     
+     <!--custom css-->
+     <link href="css/styles.css" rel="stylesheet">
+     </head>
+     
+     <body>
+     <div class="content"><!--content-->
+     <div class="nav">
+    <a href="index.html" class="">Home</a> 
+    <a href="about.html" class="">About</a> 
+    <a href="contact.html" class="">Contact</a>  
+    </div>
+    <hr style="background: bisque;">
+    </div>
+         
+          <div class="cform" id="cform">
+              <form action="http://formsubmit.co/emmanuelabande213@gmail.com" method="POST">
+            <table width="50%">
+             <caption><h1>Contact form</h1></caption>
+             <tr>
+                 <td class="tdt">Name<span style="color:red;">*</span></td>
+             <td><input type="text" name="Name" required="true" placeholder="Please enter your Name"></td>
+             </tr>
+             
+              <tr>
+              <td class="tdt">E-mail<span style="color:red;">*</span></td>
+              <td><input type="text" name="E-mail" required="true" placeholder="Please enter your E-mail"></td>
+             </tr>
+             
+              <tr>
+              <td class="tdt">Phone<span style="color:red;">*</span></td>
+              <td><input type="text" name="Phone" required="true" placeholder="Please enter your Phone number"></td>
+             </tr>
+             
+              <tr>
+             <td class="tdt">Subject<span style="color:red;">*</span></td>
+             <td><input type="text" name="Subject" required="true" placeholder="Please enter your subject"></td>
+             </tr>
+             
+              <tr>
+              <td class="tdt">Message<span style="color:red;">*</span></td>
+              <td><textarea rows="5" col="10" required="true" placeholder="Please enter your message here"></textarea></td>
+             </tr>
+             
+             <tr>
+              <td colspan="2" style="text-align: right"><button type="submit" onclick="click" myFunc()>submit</button></td>
+             </tr>
+             </table>
+            </form>        
+            </div>
+            <script src="scrip.js"></script>
+    </body>
+    </html>
